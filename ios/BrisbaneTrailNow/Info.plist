@@ -24,6 +24,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+
+	<!-- Permissions -->
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -31,10 +33,30 @@
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
+
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>We need your location to always help you navigate trails</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need your location to show nearby trails</string>
+
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photo library to let you pick images.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need access to your camera to let you take photos.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We need access to your microphone to record or play sound.</string>
+
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>whatsapp</string>
+		<string>tg</string>
+		<string>mailto</string>
+		<string>sms</string>
+		<string>fb</string>
+		<string>twitter</string>
+	</array>
+
+	<!-- UI and Orientation -->
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
